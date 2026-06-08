@@ -36,7 +36,7 @@
 * **`SecondMode`**: Tryb GEOZTM.
 * **`Achievments`**: Galeria osiągnięć użytkownika.
 
-## 🔌 API - Dokumentacja Endpointów
+## API
 Aplikacja wymaga serwera danych na porcie 3000.
 
 | Metoda | Endpoint | Opis |
