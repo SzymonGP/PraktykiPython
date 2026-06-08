@@ -36,15 +36,23 @@
 * **`SecondMode`**: Tryb GEOZTM.
 * **`Achievments`**: Galeria osiągnięć użytkownika.
 
-## API
-Aplikacja wymaga serwera danych na porcie 3000.
+## Backend - API Routes (port 3000)
 
-| Metoda | Endpoint | Opis |
-| :--- | :--- | :--- |
-| `GET` | `/stops` | Pobiera listę przystanków. |
-| `GET` | `/stopsfromstop/:lan/:lon` | Pobiera przystanki w pobliżu współrzędnych. |
-| `GET` | `/routesfromstop/:stopId` | Zwraca trasy przechodzące przez przystanek. |
-| `GET` | `/stopsfromroute/:routeId/:tripId` | Zwraca sekwencję przystanków dla trasy. |
+### `/stops` (GET)
+- Pobiera losowe przystanki (domyślnie 2 przystanki)
+- Zwraca listę przystanków z `stopId`, `stopName`, `stopCode`
+
+### `/stopsfromstop/:stopId` (GET)
+- Pobiera wszystkie przystanki dostępne z danego przystanku
+- Zwraca przystanki, do których można dojechać trasami z wybranego przystanku
+
+### `/routesfromstop/:stopId` (GET)
+- Pobiera wszystkie trasy przechodzące przez dany przystanek
+- Zwraca listę tras z `routeId`, `routeName`, `tripId`
+
+### `/stopsfromroute/:routeId/:tripId` (GET)
+- Pobiera wszystkie przystanki danej trasy w konkretnym przejeździe
+- Zwraca przystanki na odcinku trasy w chronologicznym porządku
 
 ---
 
