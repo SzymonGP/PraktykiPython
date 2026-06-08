@@ -48,28 +48,14 @@ Aplikacja wymaga serwera danych na porcie 3000.
 
 ---
 
-## 🚀 Instalacja i uruchomienie
-1. **Instalacja zależności:** `git clone https://github.com/MajewskiAdrian/ztmdle.git`
-2. **Instalacja zależności:** `cd ztmdle`
-3. **Instalacja zależności:** `cd backend/src`
-4. **Instalacja zależności:** `node server.js`
-5. **Instalacja zależności:** `cd frontend`
-6. **Instalacja zależności:** `npm install`
-7. **Uruchomienie:** `npm run dev`
-8. **API:** Upewnij się, że serwer działa na `http://localhost:3000`.
-## 🚀 Instalacja i uruchomienie
-
+## Instalacja i uruchomienie
 1. **Sklonowanie repozytorium:** `git clone https://github.com/MajewskiAdrian/ztmdle.git`
    `cd ztmdle`
 2. **Przygotowanie backendu:** `cd backend`
    `npm install` 
-   *(Opcjonalnie zainstaluj zależności, jeśli jeszcze tego nie zrobiłeś)*
 3. **Uruchomienie serwera API:** `node src/server.js` 
-   *(Pozostaw to okno terminala otwarte)*
+   *(Zostaw to okno terminala otwarte)*
 4. **Przygotowanie frontendu:** *(Otwórz nowe okno terminala)*
    `cd frontend`
    `npm install`
 5. **Uruchomienie aplikacji:** `npm run dev`
-6. **Weryfikacja:** Upewnij się, że serwer backendowy działa poprawnie w tle na `http://localhost:3000`, aby aplikacja mogła pobierać dane.
----
-*Projekt stworzony z pasją do gdańskiej komunikacji miejskiej.*
